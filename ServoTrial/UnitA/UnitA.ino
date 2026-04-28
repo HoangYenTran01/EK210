@@ -44,14 +44,14 @@
 #define CODE_MSG_PAYLOAD  0x42    // message data byte (0x42 = ASCII 'B')
 
 // ── Scan parameters ───────────────────────────────────────────────────────────
-#define SCAN_MIN_DEG        45
-#define SCAN_MAX_DEG        135
+#define SCAN_MIN_DEG        0
+#define SCAN_MAX_DEG        180
 #define SCAN_STEP_DEG       3
 #define SCAN_STEP_MS        60    // ms between servo steps
 
 // ── Handshake ─────────────────────────────────────────────────────────────────
 #define BEACON_INTERVAL_MS  100   // fire a beacon every 100ms while scanning
-#define HANDSHAKE_RETRIES   4     // need this many ACKs to confirm lock
+#define HANDSHAKE_RETRIES   3     // need this many ACKs to confirm lock
 
 // ── Comms ─────────────────────────────────────────────────────────────────────
 #define MESSAGE_INTERVAL_MS 1500  // repeat message every 1.5s once locked
